@@ -30,9 +30,9 @@ def game_instructions(agent):
 
       ⠀⠀⠀⠀⠀⡖⢤⡀⠀⠀⣀⣀⣀⣀⡀⠀⠀⢀⡴⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
             ⡇⠀⠙⠚⠉⠉⠀⠀⠀⠉⠉⠓⠋⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Hi agent {agent.agent_name.upper()}, welcome to the clan.
-                                             Codename 'IBA' has broken containment unit and is running across the geospatial grid.
-           ⡞⠀    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢧               If the infiltrator touches the perimeter, our network goes dark.
-          ⢹⡷⠦⣤⣀⡀⠀⠀   ⠀⠀⢀⣠⡤⠶⢺⠃⠀⠀⠀⠀⠀        Drop missile payloads to box it in.
+                                         Codename 'IBA' has broken containment unit and is running across the geospatial grid.
+           ⡞⠀    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢧             If the infiltrator touches the perimeter, our network goes dark.
+          ⢹⡷⠦⣤⣀⡀⠀⠀   ⠀⠀⢀⣠⡤⠶⢺⠃⠀⠀⠀⠀⠀       Drop missile payloads to box it in.
          ⢹⠀⠀⣦⠀  ⢹     ⡟   ⣦  ⡟
           ⠈⣇⣀⣠⣬⡅⠀⣠⣴⠿⣄⣀⠀⢬⣤⣀⣀⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ The Mission: Input coordinates as x y to drop barriers and trap the bear. 
            ⠙⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠞⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Capture before it hits the grid edge and runs. Type ABORT to retreat. 
@@ -43,7 +43,7 @@ def game_instructions(agent):
             ⣸⠀⠀⠀⠀⣤⠀⠀⠀⡄⠀⠀⠀⠀⣷⠀⠀⠀⠀⠈⠻⣆⠀⠀⠀⠀⠀⠀⠀Oh, and keep an eye out for on the grid, fish might be drifting through the stream.
             ⣿⠀⠀⠀⠀⣿⠀⠀⠀⡇⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀Blast them, put it in your own pockets (+10pts), HQ doesn't need to know about it.
             ⢹⡀⠀⠀⠀⣿⠀⠀⠀⡇⠀⠀⠀⢠⡏⠀⠀⠀⠀⠀⣠⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠙⠦⣤⣤⣿⣤⣤⣤⣧⣤⣤⣴⣯⣤⣤⣤⣤⡶⠞⠋⠀⠀⠀⠀      Good luck, Agent.
+            ⠙⠦⣤⣤⣿⣤⣤⣤⣧⣤⣤⣴⣯⣤⣤⣤⣤⡶⠞⠋⠀⠀⠀⠀     Good luck, Agent.
     \033[0m
     """
 
@@ -184,10 +184,10 @@ def bear_free():
 def exit_game_print():
     print("            This game will self destruct in 5 seconds")
     for i in range(5, 0, -1):
-        print(f"\033[31m                             {i}{'.' * 3}\033[0m")
+        print(f"\033[31m            {i}{'.' * 3}\033[0m")
         time.sleep(1)
     #Easter egg
-    print("""\033[31m
+    print("""\033[91m
                         _.-^^---....,,-- 
                 _---      -      -      --_ A_P
                <        -                >
